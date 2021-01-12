@@ -1,6 +1,6 @@
-# Cura PostProcessingPlugin
+# Cura PostPlugin
 # Author:   Daniuel Spannbauer
-# Date:     November 3, 2019
+# Date:     January 12, 2021
 
 # Description:  This plugin generates and inserts code including a image of the
 #               slices part.
