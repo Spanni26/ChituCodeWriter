@@ -50,7 +50,7 @@ class ChituCodeWriter(MeshWriter):
         )
 
     @call_on_qt_thread    
-    def write(self,stream: BufferedIOBase, nodes: List[SceneNode], mode = MeshWriter.OutputMode.BinaryMode) -> bool:
+    def write(self,stream: BufferedIOBase, nodes: List[SceneNode], mode = MeshWriter.OutputMode.BinaryMode, mime_type = None) -> bool:
         Logger.log("i", "starting ChituCodeWriter.")
         if mode != MeshWriter.OutputMode.TextMode:
             Logger.log("e", "ChituCodeWriter does not support non-text mode.")
@@ -181,3 +181,4 @@ class ChituCodeWriter(MeshWriter):
         pixel_string+=("M4010 I%d T%d '%s'\n" % (index_pixel, pixel_num, pixel_data))
         return pixel_string
     
+
